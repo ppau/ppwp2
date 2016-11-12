@@ -1,0 +1,105 @@
+/*!
+Theme Name: PPWP2
+Theme URI: https://pirateparty.org.au/open-source
+GitHub Theme URI: https://github.com/ppau/ppwp2
+Author: Tom Randle
+Author URI: https://twitter.com/Rundll
+Description: Pirate Party Material Design Lite WordPress Theme
+Template: MDLWP
+Version: 2.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: mdlwp
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+PPWP2 is a derivative work, based on the MDLWP theme by Brad Williams of Brag
+Interactive (http://braginteractive.com)
+
+MDLWP is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+
+Material Design Lite license:
+https://raw.githubusercontent.com/google/material-design-lite/mdl-1.x/LICENSE
+
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Typography
+# Navigation
+	## Menus
+# Alignments
+# Content
+    ## Posts and pages
+	## Comments
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "typography/typography";
+@import "typography/gehen-sans";
+@import "typography/roboto";
+@import "typography/material-icons";
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+ @import "navigation/navigation";
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+@import "modules/alignments";
+
+/*--------------------------------------------------------------
+# Widths
+--------------------------------------------------------------*/
+@import "modules/widths";
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+@import "site/site";
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+@import "site/footer";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "media/media";
+
+/*--------------------------------------------------------------
+# Pirate Party Australia Palette
+--------------------------------------------------------------*/
+@import "ppau-palette";
+
+/*--------------------------------------------------------------
+# PPWP2 theme variables, includes some material variable overrides
+--------------------------------------------------------------*/
+@import "base";
+
+/*--------------------------------------------------------------
+# Material design lite
+--------------------------------------------------------------*/
+@import "../node_modules/material-design-lite/src/material-design-lite";
+
+/*--------------------------------------------------------------
+# PPWP2 theme customisations
+--------------------------------------------------------------*/
+@import "style-ppwp2";

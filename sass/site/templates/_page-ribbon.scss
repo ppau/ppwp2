@@ -1,0 +1,42 @@
+.page-template-page-ribbon {
+
+	.site-main {
+		padding-top: 0;
+	
+		header h3 {
+			color: $mdl-color-text--grey-700;
+			margin-bottom: 15px;
+		}	
+	}
+
+	.mdlwp-page-ribbon{
+		margin-top: -35vh;
+		flex-shrink: 0;
+		display: block;
+		overflow-y: auto;
+		overflow-x: hidden;
+		flex-grow: 1;
+		z-index: 1;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.ribbon {
+		width: 100%;
+		height: 40vh;
+		background-color: #3F51B5;
+		flex-shrink: 0;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.ribbon-content {
+		padding: 40px 60px;
+	}
+
+	.is-small-screen {
+		.ribbon-content {
+			padding: 20px 30px;
+		}
+	}
+}
+

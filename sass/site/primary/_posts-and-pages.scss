@@ -1,0 +1,82 @@
+.site-main {
+	padding-top: 40px;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+
+	.mdl-card {
+		margin-bottom: 35px;
+	}
+
+	header h3 {
+		margin: 0;
+		color: #fff;
+
+		a {
+			color: #fff;
+			text-decoration: none;
+
+			&:hover {
+
+			}
+		}
+	}
+
+	.mdl-card__media {
+		box-sizing: border-box;
+		background-size: cover;
+		background-color: $color__dark-grey;
+		padding: 24px;
+		display: flex;
+		flex-grow: 1;
+		flex-direction: row;
+		align-items: flex-end;
+		cursor: pointer;
+		height: 280px;
+	}
+
+	.meta {
+		box-sizing: border-box;
+		padding: 16px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+		height: auto;
+
+		.avatar,
+		.entry-meta {
+			display: flex;
+			flex-direction: column;
+	    }
+	    .avatar-img {
+	    	margin-right: 15px;
+
+	    	img {
+	    		border-radius: 50%;
+	    	}
+	    }
+
+	   	.entry-meta {
+		    a {
+		    	text-decoration: none;
+		    	color: #757575;
+		    	font-size: 12px;
+		    	line-height: 16px
+		    }
+		}
+	}
+}
+
+.single-post {
+	.entry-content p{	
+		font-size: 16px;
+		line-height: 28px;
+	}
+}
+
+.single,
+.page {
+	.mdl-card__media {
+		cursor: default;
+	}
+}

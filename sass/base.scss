@@ -1,0 +1,38 @@
+
+$font_color: #565656;
+$bggrey: #eaeaea;
+
+$pc: #0073AE;
+$pcc: #304C7A;
+
+/* STYLE GUIDE COLOURS */
+
+/* Primary */
+$pcblue: #0073AE;
+$pcwhite: #fff;
+$pcblack: #000;
+
+/* Primary gadient */
+$pcbluegs: rgb(118, 149, 205);
+$pcbluegf: rgb(0, 30, 80);
+
+$pcblue100: #0073AE;
+$pcblue75: #5A89BB;
+$pcblue50: #8BA8CD;
+$pcblue25: #C3CFE5;
+
+/* Secondary */
+$pssteel: #304C7A;
+$psroyal: #174AA0;
+$pscrimson: #CC4756;
+$psorange: #DB692A;
+
+/* Thirdary */
+$ptred: #ad2b2b;
+$ptorange: #f6891f;
+
+// Header
+$layout-header-bg-color: unquote("rgb(#{$pcwhite})") !default;
+$layout-header-text-color: unquote("rgb(#{$pcc})") !default;
+$layout-header-nav-hover-color: unquote("rgb(#{$pcblue})") !default;
+$layout-header-tab-text-color: unquote("rgba(#{$pcc}, 0.6)") !default;

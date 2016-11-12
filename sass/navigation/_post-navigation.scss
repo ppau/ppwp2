@@ -1,0 +1,27 @@
+.mdlwp-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: $color__dark-grey;
+  font-weight: 500;
+
+    > .mdlwp-nav__button {
+    color: $color__dark-grey;
+    text-decoration: none;
+  }
+
+  .mdl-button {
+    color: rgba(0,0,0,0.54);
+    background-color: white;
+  }
+
+  > .mdlwp-nav__button:first-child .mdl-button {
+    margin-right: 16px;
+  }
+
+  > .mdlwp-nav__button:last-child .mdl-button {
+    margin-left: 16px;
+  }
+
+}

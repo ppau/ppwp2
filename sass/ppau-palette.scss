@@ -1,0 +1,65 @@
+$palette-ppau-primary:
+"184,231,255"
+"108,205,255"
+"52,186,255"
+"0,155,235"
+"0,135,205"
+"0,115,174"
+"0,95,143"
+"0,75,113"
+"0,54,82"
+"0,34,52"
+"184,231,255"
+"108,205,255"
+"0,135,205"
+"0,75,113";
+
+$palette-ppau-primary-50: nth($palette-ppau-primary, 1);
+$palette-ppau-primary-100: nth($palette-ppau-primary, 2);
+$palette-ppau-primary-200: nth($palette-ppau-primary, 3);
+$palette-ppau-primary-300: nth($palette-ppau-primary, 4);
+$palette-ppau-primary-400: nth($palette-ppau-primary, 5);
+$palette-ppau-primary-500: nth($palette-ppau-primary, 6);
+$palette-ppau-primary-600: nth($palette-ppau-primary, 7);
+$palette-ppau-primary-700: nth($palette-ppau-primary, 8);
+$palette-ppau-primary-800: nth($palette-ppau-primary, 9);
+$palette-ppau-primary-900: nth($palette-ppau-primary, 10);
+$palette-ppau-primary-A100: nth($palette-ppau-primary, 11);
+$palette-ppau-primary-A200: nth($palette-ppau-primary, 12);
+$palette-ppau-primary-A400: nth($palette-ppau-primary, 13);
+$palette-ppau-primary-A700: nth($palette-ppau-primary, 14);
+
+$palette-ppau-steel:
+"201,214,234"
+"146,171,212"
+"106,140,196"
+"65,103,166"
+"57,90,144"
+"48,76,122"
+"39,62,100"
+"31,49,78"
+"22,35,56"
+"13,21,34"
+"201,214,234"
+"146,171,212"
+"57,90,144"
+"31,49,78";
+
+$palette-ppau-steel-50: nth($palette-ppau-steel, 1);
+$palette-ppau-steel-100: nth($palette-ppau-steel, 2);
+$palette-ppau-steel-200: nth($palette-ppau-steel, 3);
+$palette-ppau-steel-300: nth($palette-ppau-steel, 4);
+$palette-ppau-steel-400: nth($palette-ppau-steel, 5);
+$palette-ppau-steel-500: nth($palette-ppau-steel, 6);
+$palette-ppau-steel-600: nth($palette-ppau-steel, 7);
+$palette-ppau-steel-700: nth($palette-ppau-steel, 8);
+$palette-ppau-steel-800: nth($palette-ppau-steel, 9);
+$palette-ppau-steel-900: nth($palette-ppau-steel, 10);
+$palette-ppau-steel-A100: nth($palette-ppau-steel, 11);
+$palette-ppau-steel-A200: nth($palette-ppau-steel, 12);
+$palette-ppau-steel-A400: nth($palette-ppau-steel, 13);
+$palette-ppau-steel-A700: nth($palette-ppau-steel, 14);
+
+$color-primary: $palette-ppau-primary-500 !default;
+$color-primary-dark: $palette-ppau-primary-700 !default;
+$color-accent: $palette-ppau-steel-A200 !default;

@@ -34,8 +34,7 @@
 				</div>
 				<div class="mdl-cell--6-col">
 					<p>
-						Authorised by: F. Boyd, Party Secretary, Pirate Party Australia<br>
-						65 Burg Street, East Maitland, New South Wales, 2323, Australia.
+						<?php dynamic_sidebar( 'footer-authorisation-1' ); ?>
 					</p>
 				</div>
 			</div>

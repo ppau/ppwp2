@@ -24,7 +24,7 @@
 
 			<div class="mdl-grid mdlwp-1200">
 				<div class="mdl-cell--6-col">
-					<a href="http://creativecommons.org/licenses/by/3.0/" style="float: left; margin-right: 24px;margin-top: 8px;">
+					<a href="https://creativecommons.org/licenses/by/4.0/" style="float: left; margin-right: 24px;margin-top: 8px;">
 						<img src="<?php echo get_stylesheet_directory_uri() . '/img/cc-by.svg' ;?>">
 					</a>
 					<p>

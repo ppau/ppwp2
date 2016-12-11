@@ -11394,6 +11394,9 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
 /*--------------------------------------------------------------
 # PPWP2 theme customisations
 --------------------------------------------------------------*/
+/*
+  Header and Drawer logo
+*/
 header #logo, .mdl-layout__drawer #logo {
   margin: 0 0 0 0;
   display: block;
@@ -11421,14 +11424,15 @@ header #logo, .mdl-layout__drawer #logo {
     color: #333;
     font-size: .65em; }
 
-@media (min-width: 1024px) {
-  .mdl-layout {
-    min-width: 1400px; } }
-
+/*
+  Drawer logo positioning section
+*/
 .mdl-layout__drawer #drawer_close_button {
   margin: 16px 0 0 24px;
   position: absolute;
   z-index: 1000; }
+  .mdl-layout__drawer #drawer_close_button:hover {
+    color: #616161; }
 
 .mdl-layout__drawer .mdl-layout-title {
   margin: 4px 40px 0 40px; }
@@ -11436,12 +11440,51 @@ header #logo, .mdl-layout__drawer #logo {
 @media (max-width: 840px) {
   .mdl-layout .mdl-layout__header-row {
     padding-left: 50px; }
-  .mdl-layout .mdlwp-search-box {
-    right: 0; }
   .mdl-layout .mdl-layout__drawer #drawer_close_button {
     margin: 16px 0 0 8px; }
   .mdl-layout .mdl-layout__drawer .mdl-layout-title {
     margin: 0px 24px 0 8px; } }
+
+.mdl-layout__drawer {
+  background-color: #fff; }
+  .mdl-layout__drawer.is-visible {
+    width: auto; }
+  .mdl-layout__drawer span.mdl-layout-title {
+    padding: 0 40px; }
+  .mdl-layout__drawer ul.mdl-navigation {
+    padding: 0; }
+  .mdl-layout__drawer .mdl-navigation ul.sub-menu {
+    padding: 0; }
+    .mdl-layout__drawer .mdl-navigation ul.sub-menu li {
+      list-style: none; }
+      .mdl-layout__drawer .mdl-navigation ul.sub-menu li hr {
+        margin: 0 32px;
+        color: #eee; }
+      .mdl-layout__drawer .mdl-navigation ul.sub-menu li a {
+        padding-left: 32px; }
+  .mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+    padding: 12px 16px;
+    font-weight: 500;
+    font-family: "Roboto-Medium", "Roboto", "Helvetica", "Arial", sans-serif;
+    color: #000; }
+    .mdl-layout__drawer .mdl-navigation .mdl-navigation__link.is-active {
+      background-color: #CCCCCC; }
+    .mdl-layout__drawer .mdl-navigation .mdl-navigation__link i.fa, .mdl-layout__drawer .mdl-navigation .mdl-navigation__link i.dashicons {
+      color: #878787; }
+  .mdl-layout__drawer .mdl-navigation .menu-item i._mi {
+    font-size: 1.6em;
+    margin-right: 36px; }
+
+/*
+  END: Drawer logo positioning section
+*/
+@media (min-width: 1024px) {
+  .mdl-layout {
+    min-width: 1400px; } }
+
+@media (max-width: 840px) {
+  .mdl-layout .mdlwp-search-box {
+    right: 0; } }
 
 header .mdl-navigation ul.mdl-menu {
   padding: 0; }
@@ -11494,36 +11537,6 @@ header .mdlwp-search-box {
       width: 100%; }
     .mdlwp-search-box.is-dirty.mdl-textfield--align-right, .mdlwp-search-box.is-focused.mdl-textfield--align-right {
       text-align: center; } }
-
-.mdl-layout__drawer {
-  background-color: #fff; }
-  .mdl-layout__drawer.is-visible {
-    width: auto; }
-  .mdl-layout__drawer span.mdl-layout-title {
-    padding: 0 40px; }
-  .mdl-layout__drawer ul.mdl-navigation {
-    padding: 0; }
-  .mdl-layout__drawer .mdl-navigation ul.sub-menu {
-    padding: 0; }
-    .mdl-layout__drawer .mdl-navigation ul.sub-menu li {
-      list-style: none; }
-      .mdl-layout__drawer .mdl-navigation ul.sub-menu li hr {
-        margin: 0 32px;
-        color: #eee; }
-      .mdl-layout__drawer .mdl-navigation ul.sub-menu li a {
-        padding-left: 32px; }
-  .mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
-    padding: 12px 16px;
-    font-weight: 500;
-    font-family: "Roboto-Medium", "Roboto", "Helvetica", "Arial", sans-serif;
-    color: #000; }
-    .mdl-layout__drawer .mdl-navigation .mdl-navigation__link.is-active {
-      background-color: #CCCCCC; }
-    .mdl-layout__drawer .mdl-navigation .mdl-navigation__link i.fa, .mdl-layout__drawer .mdl-navigation .mdl-navigation__link i.dashicons {
-      color: #878787; }
-  .mdl-layout__drawer .mdl-navigation .menu-item i._mi {
-    font-size: 1.6em;
-    margin-right: 36px; }
 
 .mdl-layout__header-row {
   padding: 0 80px 0 80px;
@@ -11649,7 +11662,8 @@ a.pir-button-join {
   /* Medium devices (desktops, 992px and up) */
   /* Large devices (large desktops, 1200px and up) */ }
   .hero .mdl-grid {
-    background-color: rgba(0, 0, 0, 0.65); }
+    background-color: rgba(0, 0, 0, 0.65);
+    padding-bottom: 36px; }
   .hero h1, .hero h2, .hero h3, .hero h4, .hero h5, .hero h6 {
     color: #fff;
     margin-top: 0; }
@@ -11749,5 +11763,14 @@ address {
 .no-results .page-title {
   margin-left: 24px;
   margin-right: 24px; }
+
+.cc-credit {
+  font-size: 12px;
+  color: #aaa;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.3); }
 
 /*# sourceMappingURL=../sass */

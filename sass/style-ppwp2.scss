@@ -147,7 +147,9 @@ header, .mdl-layout__drawer {
 
 header {
   .mdl-navigation {
-
+    .mdl-navigation__link {
+      cursor: pointer;
+    }
     ul.mdl-menu {
       padding: 0;
       li {

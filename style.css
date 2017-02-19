@@ -11486,6 +11486,9 @@ header #logo, .mdl-layout__drawer #logo {
   .mdl-layout .mdlwp-search-box {
     right: 0; } }
 
+header .mdl-navigation .mdl-navigation__link {
+  cursor: pointer; }
+
 header .mdl-navigation ul.mdl-menu {
   padding: 0; }
   header .mdl-navigation ul.mdl-menu li {

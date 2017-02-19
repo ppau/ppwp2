@@ -45,6 +45,9 @@
         <a href="<?php echo(get_page_by_slug("donate")); ?>"  class="pir-button-donate mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
             Donate
         </a>
+        <?php /*<a href="https://members.pirateparty.org.au"  class="pir-button-members mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+            Members
+        </a>*/ ?>
     </div>
 
     <div class="mdlwp-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">

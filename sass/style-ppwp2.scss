@@ -245,6 +245,14 @@ a.pir-button-join {
   }
 }
 
+a.pir-button-members {
+  background-color: $pssteel;
+  color: $pcwhite;
+
+  &:hover, &:active, &:focus:not(:active) {
+    background-color: $pssteel;
+  }
+}
 
 .site-main .mdl-card__media {
   height: auto;

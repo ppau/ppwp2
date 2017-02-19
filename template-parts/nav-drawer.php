@@ -20,6 +20,21 @@
         </a>
     </span>
 
+    <div class="pir-header-extra" style="text-align: center; margin-top: 16px;">
+        <a href="<?php echo(get_page_by_slug("join-us")); ?>" class="pir-button-join mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+            Join us
+        </a>
+
+        <a href="<?php echo(get_page_by_slug("donate")); ?>"  class="pir-button-donate mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+            Donate
+        </a>
+
+        <?php /*<a href="https://members.pirateparty.org.au"  class="pir-button-members mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+            Members
+        </a>*/ ?>
+
+    </div>
+
     <?php
     $args = array(
         'theme_location' => 'primary',

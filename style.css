@@ -11554,6 +11554,12 @@ a.pir-button-join {
   a.pir-button-join:hover, a.pir-button-join:active, a.pir-button-join:focus:not(:active) {
     background-color: #f6891f; }
 
+a.pir-button-members {
+  background-color: #304C7A;
+  color: #fff; }
+  a.pir-button-members:hover, a.pir-button-members:active, a.pir-button-members:focus:not(:active) {
+    background-color: #304C7A; }
+
 .site-main .mdl-card__media {
   height: auto; }
   .site-main .mdl-card__media.has-feature-image {

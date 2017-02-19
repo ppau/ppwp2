@@ -11559,15 +11559,15 @@ a.pir-button-join {
   .site-main .mdl-card__media.has-feature-image {
     height: 280px; }
 
-article .meta {
-  width: 100%; }
-
-article .entry-content {
+.entry-content {
   padding: 0 16px;
   width: 100%;
   box-sizing: border-box; }
-  article .entry-content p {
+  .entry-content p {
     width: 100%; }
+  .entry-content .meta {
+    width: 100%;
+    padding: 16px 0 0 0; }
 
 .pir-card {
   width: 100%; }

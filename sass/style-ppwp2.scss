@@ -253,20 +253,18 @@ a.pir-button-join {
   }
 }
 
-article {
+.entry-content {
+  padding: 0 16px;
+  width: 100%;
+  box-sizing: border-box;
+  p {
+    width: 100%;
+  }
   .meta {
     width: 100%;
-  }
-  .entry-content {
-    padding: 0 16px;
-    width: 100%;
-    box-sizing: border-box;
-    p {
-      width: 100%;
-    }
+    padding: 16px 0 0 0;
   }
 }
-
 
 .pir-card {
   width: 100%;

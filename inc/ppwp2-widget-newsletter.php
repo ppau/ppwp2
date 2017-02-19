@@ -28,20 +28,20 @@ class ppwp2_widget_newsletter extends WP_Widget {
         ?>
         <div class="pir-card mdl-card mdl-shadow--2dp">
             <div class="mdl-card__title mdl-card--expand">
-                <h2 class="mdl-card__title-text">Newsletter</h2>
+                <h2 class="mdl-card__title-text">Newsletter &amp; announcements</h2>
             </div>
             <div class="mdl-card__supporting-text">
-                <p>Join our Newsletter, discover what we're up to!</p>
+                <p>Join our newsletter and announcements, discover what we're up to!</p>
 
-                <form action="#">
+                <form action="//lists.pirateparty.org.au/cgi-bin/dada/mail.cgi" method="post" accept-charset="UTF-8">
+                    <input type="hidden" name="list" value="Anno"/>
                     <div class="mdl-textfield mdl-js-textfield">
-                        <input class="mdl-textfield__input" type="text" id="sample1" placeholder="Email">
-                        <label class="mdl-textfield__label" for="sample1">Text...</label>
+                        <input class="mdl-textfield__input" type="text" id="email_field" name="email" placeholder="Email">
+                        <label class="mdl-textfield__label" for="email_field">Email</label>
                     </div>
                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
                         Submit
                     </button>
-
                 </form>
 
             </div>

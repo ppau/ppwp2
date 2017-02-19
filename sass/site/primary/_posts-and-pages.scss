@@ -36,7 +36,7 @@
 
 	.meta {
 		box-sizing: border-box;
-		padding: 16px;
+		padding: 16px 16px 0px 16px;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -60,7 +60,6 @@
 		    a {
 		    	text-decoration: none;
 		    	color: #757575;
-		    	font-size: 12px;
 		    	line-height: 16px
 		    }
 		}

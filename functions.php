@@ -94,6 +94,7 @@ function ppwp2_widgets_init() {
 }
 add_action( 'widgets_init', 'ppwp2_widgets_init' );
 
+
 /**
  * Register widgets.
  */

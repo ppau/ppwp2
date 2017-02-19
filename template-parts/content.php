@@ -39,6 +39,15 @@
 		</div>
 
 		<div class="entry-content mdl-card__supporting-text">
+            <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+                <?php if ( 'post' == get_post_type() ) : ?>
+                    <div class="entry-meta" style="width: 100%;">
+                        <div class="muted"><?php mdlwp_posted_on(); ?></div><!-- .entry-meta -->
+                        <hr>
+                    </div><!-- .entry-meta -->
+                <?php endif; ?>
+            </div>
+
 			<?php
 				the_content( sprintf(
 					/* translators: %s: Name of current post. */
@@ -55,19 +64,6 @@
 			?>
 		</div><!-- .entry-content -->
 
-		<footer class="entry-footer meta mdl-card__actions mdl-card--border">
-
-			<div class="avatar-img">
-				<?php echo get_avatar( get_the_author_meta( 'ID' ), 32 ); ?>
-			</div>
-	        
-	        <?php if ( 'post' == get_post_type() ) : ?>
-			<div class="entry-meta">
-				<?php mdlwp_posted_on(); ?>
-			</div><!-- .entry-meta -->
-			<?php endif; ?>
-	              
-		</footer><!-- .entry-footer -->
 	</article><!-- #post-## -->
 </div><!-- .mdl-cell -->
 

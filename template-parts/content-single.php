@@ -41,13 +41,10 @@
 		</div>
 
 		<div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
-			<div class="avatar-img">
-				<?php echo get_avatar( get_the_author_meta( 'ID' ), 32 ); ?>
-			</div>
-
 			<?php if ( 'post' == get_post_type() ) : ?>
-				<div class="entry-meta">
-					<?php mdlwp_posted_on(); ?>
+				<div class="entry-meta" style="width: 100%;">
+                    <div class="muted"><?php mdlwp_posted_on(); ?></div><!-- .entry-meta -->
+                    <hr>
 				</div><!-- .entry-meta -->
 			<?php endif; ?>
 	    </div>

@@ -44,7 +44,7 @@
 
             <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
                 <div class="entry-meta" style="width: 100%;">
-                    <div class="muted"><?php mdlwp_posted_on(); ?></div><!-- .entry-meta -->
+                    <div class="muted"><?php ppwp2_posted_on(); ?></div><!-- .entry-meta -->
                     <hr>
                 </div><!-- .entry-meta -->
             </div>

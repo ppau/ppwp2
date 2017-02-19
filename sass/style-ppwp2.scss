@@ -254,11 +254,15 @@ a.pir-button-join {
 }
 
 article {
-  .mdl-card__supporting-text {
+  .meta {
     width: 100%;
-    padding: 0 0 16px 0;
+  }
+  .entry-content {
+    padding: 0 16px;
+    width: 100%;
+    box-sizing: border-box;
     p {
-      padding: 0 16px;
+      width: 100%;
     }
   }
 }

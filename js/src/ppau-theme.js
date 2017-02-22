@@ -1,4 +1,5 @@
 var $ = jQuery;
+
 $(function(){
     // Drawer menu collapse toggle.
     $(".menu-item-has-children").each(function(){

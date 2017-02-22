@@ -4695,6 +4695,8 @@ input.mdl-button[type="submit"] {
   overflow: hidden;
   padding: 16px 16px;
   width: 90%; }
+  .mdl-card__supporting-text.mdl-card--border {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
 .mdl-card__actions {
   font-size: 16px;
@@ -8326,7 +8328,9 @@ input.mdl-button[type="submit"] {
   font-size: 16px;
   line-height: 24px;
   display: inline-block;
+  vertical-align: middle;
   box-sizing: border-box;
+  height: 24px;
   margin: 0;
   padding-left: 0; }
   .mdl-radio.is-upgraded {
@@ -8380,11 +8384,11 @@ input.mdl-button[type="submit"] {
   transition-duration: 0.28s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: transform;
-  transform: scale3d(0, 0, 0);
+  transform: scale(0, 0);
   border-radius: 50%;
   background: rgb(0,115,174); }
   .mdl-radio.is-checked .mdl-radio__inner-circle {
-    transform: scale3d(1, 1, 1); }
+    transform: scale(1, 1); }
   fieldset[disabled] .mdl-radio .mdl-radio__inner-circle,
   .mdl-radio.is-disabled .mdl-radio__inner-circle {
     background: rgba(0,0,0, 0.26);
@@ -9373,6 +9377,10 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
   height: 100%;
   overflow: hidden;
   border-color: inherit; }
+  .mdl-spinner__circle-clipper.mdl-spinner__left {
+    float: left; }
+  .mdl-spinner__circle-clipper.mdl-spinner__right {
+    float: right; }
   .mdl-spinner__circle-clipper .mdl-spinner__circle {
     width: 200%; }
 

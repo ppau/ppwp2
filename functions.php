@@ -135,6 +135,15 @@ function ppwp2_posted_on() {
 endif;
 
 /**
+ * Remove jQuery Migrate warning
+ */
+add_action('wp_default_scripts', function ($scripts) {
+	if (!empty($scripts->registered['jquery'])) {
+		$scripts->registered['jquery']->deps = array_diff($scripts->registered['jquery']->deps, array('jquery-migrate'));
+	}
+});
+
+/**
  * Register widgets.
  */
 require get_stylesheet_directory() . '/inc/ppwp2-widget-authorisation.php';

@@ -1,0 +1,19 @@
+{{ before_widget | raw }}
+
+<div class="pir-card pir-card__upcoming-events mdl-card mdl-shadow--2dp">
+    {% if title is not empty %}
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">
+                {{ ( title ) | raw }}
+            </h2>
+        </div>
+    {% endif %}
+
+    <div class="mdl-card__supporting-text">
+        {{ widget_html | raw }}
+    </div>
+</div>
+
+
+
+{{ after_widget | raw }}

@@ -317,6 +317,7 @@ a.pir-button-members {
     ul {
       font-size: 1.1em;
       margin: 0 0 0 0;
+      padding-left: 20px;
     }
   }
 }
@@ -586,4 +587,37 @@ address {
   bottom: 0;
   padding: 8px;
   background-color: rgba(0, 0, 0, .3);
+}
+
+/*--------------------------------------------------------------
+# Upcoming events widget fixes
+--------------------------------------------------------------*/
+.pir-card__upcoming-events {
+  z-index: 10000;
+  overflow: inherit;
+  .mdl-card__supporting-text {
+    overflow: inherit;
+    height: 100%;
+    max-height: 220.5px;
+    width: 100%;
+    padding: 0;
+
+    .ai1ec-agenda-widget-view {
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+
+      .ai1ec-no-results, .ai1ec-results {
+        flex-basis: auto;
+        flex-grow: 1;
+        flex-shrink: 1;
+        overflow-y: scroll;
+      }
+
+      .ai1ec-subscribe-buttons-widget {
+        width: 100%;
+        padding: 8px;
+      }
+    }
+  }
 }

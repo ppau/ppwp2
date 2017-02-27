@@ -144,6 +144,16 @@ add_action('wp_default_scripts', function ($scripts) {
 });
 
 /**
+ * Add Pin.js script if widget is used
+ */
+function check_widget() {
+    if( is_active_widget( '', '', 'ppwp2_widget_quick_donate' ) ) { // check if search widget is used
+        wp_enqueue_script('', 'https://cdn.pin.net.au/pin.v2.js');
+    }
+}
+add_action( 'init', 'check_widget' );
+
+/**
  * Register widgets.
  */
 require get_stylesheet_directory() . '/inc/ppwp2-widget-authorisation.php';
@@ -153,3 +163,4 @@ require get_stylesheet_directory() . '/inc/ppwp2-widget-we-are-a-movement.php';
 require get_stylesheet_directory() . '/inc/ppwp2-widget-discussion-boards.php';
 require get_stylesheet_directory() . '/inc/ppwp2-widget-quick-donate.php';
 require get_stylesheet_directory() . '/inc/ppwp2-widget-newsletter.php';
+require get_stylesheet_directory() . '/inc/ppwp2-widget-upcoming-events.php';

@@ -329,6 +329,8 @@ a.pir-button-members {
   }
   .mdl-grid {
     padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -350,7 +352,8 @@ a.pir-button-members {
 
 .pir-button {
   &.pir-button-block {
-    width: 100%;
+    display: block;
+    min-width: inherit;
   }
 }
 

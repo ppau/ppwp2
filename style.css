@@ -11620,7 +11620,9 @@ a.pir-button-members {
   margin: 0; }
 
 .pir-card__quick-donate .mdl-grid {
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0; }
 
 .pir-card__discuss .mdl-card__title {
   padding: 0;
@@ -11635,7 +11637,8 @@ a.pir-button-members {
     padding: 16px 16px; }
 
 .pir-button.pir-button-block {
-  width: 100%; }
+  display: block;
+  min-width: inherit; }
 
 @media (min-width: 840px) {
   .hp-row-one .mdl-card {

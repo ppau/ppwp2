@@ -17,10 +17,16 @@ class ppwp2_widget_quick_donate extends WP_Widget {
 		);
 	}
 
+	public function uri_for_amount($pin_uri, $amount){
+	    return $pin_uri . "?amount=%24" . $amount . "&amp;description=One-off+donation&amp;amount_editable=false&amp;success_url=https%3A%2F%2Fpirateparty.org.au%2Fdonate-thank-you%2F";
+    }
+
 	// Creating widget front-end
 	// This is where the action happens
 	public function widget( $args, $instance ) {
 		extract( $args );
+
+        $pin_uri = apply_filters('widget_pin_uri', $instance['pin_uri']);
 
 		// before and after widget arguments are defined by themes
 		echo $before_widget;
@@ -34,36 +40,41 @@ class ppwp2_widget_quick_donate extends WP_Widget {
                 <p>We run an efficient ship, but political parties are not cheap to run. Every dollar you donate goes a long way.</p>
                 <div class="mdl-grid">
                     <div class="mdl-cell mdl-cell--4-col">
-                        <button class="pir-button pir-button-block mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                        <a href="<?php echo($this->uri_for_amount($pin_uri, "5.00")); ?>"
+                                class="pin-payment-button pir-button pir-button-block mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
                           $5
-                        </button>
+                        </a>
                     </div>
                     <div class="mdl-cell mdl-cell--4-col">
-                        <button class="pir-button pir-button-block mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                        <a href="<?php echo($this->uri_for_amount($pin_uri, "10.00")); ?>"
+                                class="pin-payment-button pir-button pir-button-block mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
                           $10
-                        </button>
+                        </a>
                     </div>
                     <div class="mdl-cell mdl-cell--4-col">
-                        <button class="pir-button pir-button-block mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                        <a  href="<?php echo($this->uri_for_amount($pin_uri, "25.00")); ?>"
+                                class="pin-payment-button pir-button pir-button-block mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
                           $25
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div class="mdl-grid">
                     <div class="mdl-cell mdl-cell--4-col">
-                        <button class="pir-button pir-button-block mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                        <a href="<?php echo($this->uri_for_amount($pin_uri, "50.00")); ?>"
+                                class="pin-payment-button pir-button pir-button-block mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
                           $50
-                        </button>
+                        </a>
                     </div>
                     <div class="mdl-cell mdl-cell--4-col">
-                        <button class="pir-button pir-button-block mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                        <a href="<?php echo($this->uri_for_amount($pin_uri, "100.00")); ?>"
+                                class="pin-payment-button pir-button pir-button-block mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
                           $100
-                        </button>
+                        </a>
                     </div>
                     <div class="mdl-cell mdl-cell--4-col">
-                        <button class="pir-button pir-button-block mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                        <a href="<?php echo(get_page_by_slug("donate")); ?>" class="pir-button pir-button-block mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
                           Other
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -75,11 +86,26 @@ class ppwp2_widget_quick_donate extends WP_Widget {
 
 	// Widget Backend
 	public function form( $instance ) {
-	}
+		$instance = wp_parse_args( (array) $instance, array(
+			'pin_uri' 		=> ''
+		) );
+
+		$pin_uri = esc_attr($instance['pin_uri']);
+
+		// Widget admin form
+		?>
+		<p>
+			<label for="<?php echo $this->get_field_id( 'pin_uri' ); ?>"><?php _e( 'Pin.js URI', 'ppwp2' ); ?></label>
+			<input class="widefat" id="<?php echo $this->get_field_id( 'pin_uri' ); ?>" name="<?php echo $this->get_field_name( 'pin_uri' ); ?>" type="text" value="<?php echo esc_attr( $pin_uri ); ?>" />
+		</p>
+
+	<?php }
 
 	// Updating widget replacing old instances with new
-	public function update($new_instance, $old_instance) {
+	public function update($new_instance, $old_instance)
+	{
 		$instance = array();
+		$instance['pin_uri'] = !empty($new_instance['pin_uri']) ? strip_tags($new_instance['pin_uri']) : '';
 		return $instance;
 	}
 } // Class ppwp2_widget_quick_donate ends here

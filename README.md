@@ -2,6 +2,7 @@
 
 PPWP2 is a Material Design WordPress theme that uses Sass, Gulp etc. and of course Material Design Lite. 
 
+![screenshot](https://i.imgur.com/CEWNtZa.png)
 [Live Demo](https://pirateparty.org.au)
 
 ### Usage

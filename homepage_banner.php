@@ -17,7 +17,7 @@
             <h3>The major parties have rigged the system, good ideas don't get heard, serious issues are ignored.</h3>
         </div>
         <div class="mdl-cell mdl-cell--12-col">
-            <h3>But with your help a fairer and more democratic Australia is possible.</h3>
+            <h3>With your help a fairer and more democratic Australia is possible.</h3>
         </div>
         <p class="cc-credit">Photo:&nbsp;
             <a href="https://www.flickr.com/photos/russellstreet/26995633782/">

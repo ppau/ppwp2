@@ -13,7 +13,7 @@
 
 get_header(); ?>
 
-	<?php if (is_home()) : ?>
+	<?php if ($_SERVER["REQUEST_URI"] == '/') : ?>
 		<?php require_once('homepage_banner.php'); ?>
 	<?php endif; ?>
 

@@ -133,7 +133,12 @@ header, .mdl-layout__drawer {
 
 @media (min-width: 1024px) {
   .mdl-layout {
-    min-width: 1400px;
+    min-width: 1240px;
+  }
+}
+@media (max-width: 1024px) {
+  .mdl-layout__header-row {
+    padding-right:0 !important;
   }
 }
 

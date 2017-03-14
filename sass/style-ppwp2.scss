@@ -147,6 +147,7 @@ header, .mdl-layout__drawer {
     .mdlwp-search-box {
       right: 0;
     }
+
   }
 }
 
@@ -201,6 +202,10 @@ header {
     background-color: #fff;
     &.is-dirty, &.is-focused {
       margin-left: -240px;
+    }
+
+    .mdl-button--icon {
+      top: 12px;
     }
   }
 }

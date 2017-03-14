@@ -11537,6 +11537,8 @@ header .mdlwp-search-box {
   background-color: #fff; }
   header .mdlwp-search-box.is-dirty, header .mdlwp-search-box.is-focused {
     margin-left: -240px; }
+  header .mdlwp-search-box .mdl-button--icon {
+    top: 12px; }
 
 @media (min-width: 0px) and (max-width: 835px) {
   .mdl-layout--medium-screen-only {

@@ -26,7 +26,7 @@ class ppwp2_widget_newsletter extends WP_Widget {
 		echo $before_widget;
 
         ?>
-        <div class="pir-card mdl-card mdl-shadow--2dp">
+        <div class="pir-card pir-card__newsletter mdl-card mdl-shadow--2dp">
             <div class="mdl-card__title">
                 <h2 class="mdl-card__title-text">Newsletter &amp; announcements</h2>
             </div>

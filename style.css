@@ -11809,7 +11809,11 @@ address {
 --------------------------------------------------------------*/
 .pir-card__upcoming-events {
   z-index: 10000;
-  overflow: inherit; }
+  overflow: inherit;
+  max-height: 280px; }
+  @media (max-width: 840px) {
+    .pir-card__upcoming-events {
+      height: 985px !important; } }
   .pir-card__upcoming-events .mdl-card__supporting-text {
     overflow: inherit;
     height: 100%;
@@ -11824,9 +11828,13 @@ address {
         flex-basis: auto;
         flex-grow: 1;
         flex-shrink: 1;
-        overflow-y: scroll; }
+        overflow-y: scroll;
+        max-height: 282px; }
       .pir-card__upcoming-events .mdl-card__supporting-text .ai1ec-agenda-widget-view .ai1ec-subscribe-buttons-widget {
         width: 100%;
         padding: 8px; }
+
+.pir-card__newsletter .mdl-textfield {
+  padding-top: 0 !important; }
 
 /*# sourceMappingURL=../sass */

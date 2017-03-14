@@ -595,6 +595,12 @@ address {
 .pir-card__upcoming-events {
   z-index: 10000;
   overflow: inherit;
+  max-height: 280px;
+
+  @media (max-width: 840px) {
+    height: 985px !important;
+  }
+
   .mdl-card__supporting-text {
     overflow: inherit;
     height: 100%;
@@ -612,6 +618,7 @@ address {
         flex-grow: 1;
         flex-shrink: 1;
         overflow-y: scroll;
+        max-height: 282px;
       }
 
       .ai1ec-subscribe-buttons-widget {
@@ -619,5 +626,11 @@ address {
         padding: 8px;
       }
     }
+  }
+}
+
+.pir-card__newsletter {
+  .mdl-textfield {
+    padding-top: 0 !important;
   }
 }

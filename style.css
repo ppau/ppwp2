@@ -11592,6 +11592,9 @@ a.pir-button-members {
     width: 100%;
     padding: 16px 0 0 0; }
 
+article.type-page .entry-content {
+  padding: 0; }
+
 .pir-card {
   width: 100%; }
   .pir-card .mdl-card__title {

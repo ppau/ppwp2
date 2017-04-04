@@ -29,7 +29,7 @@ class ppwp2_widget_we_are_a_movement extends WP_Widget {
         <div class="pir-card pir-card__we-are mdl-card mdl-shadow--2dp">
             <div class="mdl-card__title">
                 <h2 class="mdl-card__title-text">
-                    <strong>We are</strong> a movement based around the core tenets of:
+                    <strong>We are</strong> a political movement based around the core tenets of:
                 </h2>
             </div>
             <div class="mdl-card__supporting-text">

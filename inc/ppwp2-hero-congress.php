@@ -56,11 +56,11 @@ class ppwp2_hero_congress extends WP_Widget {
                         </a>
                     <?php } ?>
                 </div>
-                <?php /*<p class="cc-credit">Photo:&nbsp;
-                    <a href="https://www.flickr.com/photos/russellstreet/26995633782/">
-                        Russell Street
-                    </a> CC-BY-SA
-                </p>*/ ?>
+                <p class="cc-credit">Photo:&nbsp;
+                    <a href="https://www.flickr.com/photos/devdsp/9281615801/">
+                        Adam Thomas
+                    </a> CC-BY
+                </p>
             </div>
         </div>
         <?php

@@ -43,6 +43,16 @@ function get_page_by_slug($path){
  */
 function ppwp2_widgets_init() {
 	register_sidebar( array(
+		'name'          => esc_html__( 'Hero banner', 'ppwp2' ),
+		'id'            => 'homepage-hero',
+		'description'   => '',
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '',
+		'after_title'   => '',
+	) );
+
+	register_sidebar( array(
 		'name'          => esc_html__( 'Banner row 1', 'ppwp2' ),
 		'id'            => 'homepage-banner-1',
 		'description'   => '',
@@ -177,3 +187,5 @@ require get_stylesheet_directory() . '/inc/ppwp2-widget-discussion-boards.php';
 require get_stylesheet_directory() . '/inc/ppwp2-widget-quick-donate.php';
 require get_stylesheet_directory() . '/inc/ppwp2-widget-newsletter.php';
 require get_stylesheet_directory() . '/inc/ppwp2-widget-upcoming-events.php';
+require get_stylesheet_directory() . '/inc/ppwp2-hero-broken-politics.php';
+require get_stylesheet_directory() . '/inc/ppwp2-hero-congress.php';

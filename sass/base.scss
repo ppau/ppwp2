@@ -36,3 +36,9 @@ $layout-header-bg-color: unquote("rgb(#{$pcwhite})") !default;
 $layout-header-text-color: unquote("rgb(#{$pcc})") !default;
 $layout-header-nav-hover-color: unquote("rgb(#{$pcblue})") !default;
 $layout-header-tab-text-color: unquote("rgba(#{$pcc}, 0.6)") !default;
+
+$c-primary: #3F51B5;
+$c-success: #009688;
+$c-info: #03A9F4;
+$c-warning: #FF9800;
+$c-danger: #F44336;

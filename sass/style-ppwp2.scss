@@ -266,6 +266,45 @@ a.pir-button-members {
   }
 }
 
+/* Buttons with bootstrap style colours */
+a.pir-button-success {
+  background-color: $c-success;
+  color: $pcwhite;
+
+  &:hover, &:active, &:focus:not(:active) {
+    background-color: $c-success;
+  }
+}
+
+a.pir-button-info {
+  background-color: $c-info;
+  color: $pcwhite;
+
+  &:hover, &:active, &:focus:not(:active) {
+    background-color: $c-info;
+  }
+}
+
+a.pir-button-warning {
+  background-color: $c-warning;
+  color: $pcwhite;
+
+  &:hover, &:active, &:focus:not(:active) {
+    background-color: $c-warning;
+  }
+}
+
+a.pir-button-danger {
+  background-color: $c-danger;
+  color: $pcwhite;
+
+  &:hover, &:active, &:focus:not(:active) {
+    background-color: $c-danger;
+  }
+}
+
+/* Site main cards */
+
 .site-main .mdl-card__media {
   height: auto;
   &.has-feature-image {
@@ -438,13 +477,23 @@ article.type-page {
   text-align: center;
   position: relative;
 
-  background: url(./img/hero_russellstreet_26995633782.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  &.hero-congress {
+    background: url(./img/hero_congress_voting.jpg);
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+
+  &.hero-broken-politics {
+    background: url(./img/hero_russellstreet_26995633782.jpg);
+    background-color: rgba(0, 0, 0, 0.65);
+  }
+
+  &.hero-broken-politics, &.hero-congress {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 
   .mdl-grid {
-    background-color: rgba(0, 0, 0, 0.65);
     padding-bottom: 36px;
   }
 

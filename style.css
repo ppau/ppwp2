@@ -11577,6 +11577,32 @@ a.pir-button-members {
   a.pir-button-members:hover, a.pir-button-members:active, a.pir-button-members:focus:not(:active) {
     background-color: #304C7A; }
 
+/* Buttons with bootstrap style colours */
+a.pir-button-success {
+  background-color: #009688;
+  color: #fff; }
+  a.pir-button-success:hover, a.pir-button-success:active, a.pir-button-success:focus:not(:active) {
+    background-color: #009688; }
+
+a.pir-button-info {
+  background-color: #03A9F4;
+  color: #fff; }
+  a.pir-button-info:hover, a.pir-button-info:active, a.pir-button-info:focus:not(:active) {
+    background-color: #03A9F4; }
+
+a.pir-button-warning {
+  background-color: #FF9800;
+  color: #fff; }
+  a.pir-button-warning:hover, a.pir-button-warning:active, a.pir-button-warning:focus:not(:active) {
+    background-color: #FF9800; }
+
+a.pir-button-danger {
+  background-color: #F44336;
+  color: #fff; }
+  a.pir-button-danger:hover, a.pir-button-danger:active, a.pir-button-danger:focus:not(:active) {
+    background-color: #F44336; }
+
+/* Site main cards */
 .site-main .mdl-card__media {
   height: auto; }
   .site-main .mdl-card__media.has-feature-image {
@@ -11695,14 +11721,19 @@ article.type-page .entry-content {
 .hero {
   text-align: center;
   position: relative;
-  background: url(./img/hero_russellstreet_26995633782.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   /* Medium devices (desktops, 992px and up) */
   /* Large devices (large desktops, 1200px and up) */ }
+  .hero.hero-congress {
+    background: url(./img/hero_congress_voting.jpg);
+    background-color: rgba(0, 0, 0, 0.35); }
+  .hero.hero-broken-politics {
+    background: url(./img/hero_russellstreet_26995633782.jpg);
+    background-color: rgba(0, 0, 0, 0.65); }
+  .hero.hero-broken-politics, .hero.hero-congress {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
   .hero .mdl-grid {
-    background-color: rgba(0, 0, 0, 0.65);
     padding-bottom: 36px; }
   .hero h1, .hero h2, .hero h3, .hero h4, .hero h5, .hero h6 {
     color: #fff;

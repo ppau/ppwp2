@@ -85,7 +85,7 @@ class ppwp2_hero_congress extends WP_Widget {
 		// Widget admin form
 		?>
         <p>
-			<label for="<?php echo $this->get_field_id( 'location_and_dates_text' ); ?>"><?php _e( 'Event information URL:', 'ppwp2' ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'location_and_dates_text' ); ?>"><?php _e( 'Event location and dates:', 'ppwp2' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'location_and_dates_text' ); ?>" name="<?php echo $this->get_field_name( 'location_and_dates_text' ); ?>" type="text" value="<?php echo esc_attr( $location_and_dates_text ); ?>" />
 		</p>
 		<p>

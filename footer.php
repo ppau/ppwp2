@@ -33,9 +33,8 @@
 					</p>
 				</div>
 				<div class="mdl-cell--6-col">
-					<p>
-						<?php dynamic_sidebar( 'footer-authorisation-1' ); ?>
-					</p>
+					<?php dynamic_sidebar( 'footer-authorisation-1' ); ?>
+					
 				</div>
 			</div>
 

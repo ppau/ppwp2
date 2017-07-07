@@ -40,3 +40,21 @@ function ppwp2_customizer_live_preview() {
 }
 remove_action( 'customize_preview_init', 'mdlwp_customizer_live_preview' );
 add_action( 'customize_preview_init', 'ppwp2_customizer_live_preview' );
+
+/**
+ * Fix rocketloader
+ **/
+function add_data_attribute($tag, $handle) {
+	$replace_handles = [
+		'mdlwp-mdlwp-js',
+		'jquery-core'
+	];
+
+	if (in_array($handle, $replace_handles)) {
+		return str_replace(' src', ' data-cfasync="false" src', $tag);
+	};
+
+	return $tag;
+}
+
+add_filter('script_loader_tag', 'add_data_attribute', 10, 2);

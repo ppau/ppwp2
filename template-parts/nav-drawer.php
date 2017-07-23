@@ -29,9 +29,9 @@
             Donate
         </a>
 
-        <?php /*<a href="https://members.pirateparty.org.au"  class="pir-button-members mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+        <a href="https://members.pirateparty.org.au"  class="pir-button-members mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
             Members
-        </a>*/ ?>
+        </a>
 
     </div>
 

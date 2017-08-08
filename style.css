@@ -11727,8 +11727,9 @@ article.type-page .entry-content {
     background: url(./img/hero_congress_voting.jpg);
     background-color: rgba(0, 0, 0, 0.35); }
   .hero.hero-broken-politics {
-    background: url(./img/hero_russellstreet_26995633782.jpg);
-    background-color: rgba(0, 0, 0, 0.65); }
+    background: url(./img/hero_russellstreet_26995633782.jpg); }
+    .hero.hero-broken-politics .mdl-grid {
+      background-color: rgba(0, 0, 0, 0.65); }
   .hero.hero-broken-politics, .hero.hero-congress {
     background-repeat: no-repeat;
     background-size: cover;

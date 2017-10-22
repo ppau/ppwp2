@@ -8,11 +8,11 @@ class ppwp2_widget_discussion_boards extends WP_Widget {
 			'ppwp2_widget_discussion_boards',
 
 			// Widget name will appear in UI
-			__('PPWP2 Card - Discussion boards', 'ppwp2'),
+			__('PPWP2 Card - Discussion forum', 'ppwp2'),
 
 			// Widget description
 			array(
-				'description' 	=> __( 'Card for discussion boards', 'ppwp2' ),
+				'description' 	=> __( 'Card for discussion forum', 'ppwp2' ),
 			)
 		);
 	}
@@ -37,7 +37,7 @@ class ppwp2_widget_discussion_boards extends WP_Widget {
             </div>
             <div class="mdl-card__actions mdl-card--border">
                 <a href="https://discuss.pirateparty.org.au" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                    Visit the discussion boards
+                    Visit the discussion forum
                 </a>
             </div>
         </div>

@@ -11,7 +11,7 @@ $color__text-input-focus: #111;
 $color__link: #3f51b5;
 $color__link-visited: purple;
 $color__link-hover: midnightblue;
-$color__text-main: #404040;
+$color__text-main: #303030;
 
 $color__border-button: #ccc #ccc #bbb;
 $color__border-button-hover: #ccc #bbb #aaa;
@@ -20,5 +20,14 @@ $color__border-input: #ccc;
 $color__border-abbr: #666;
 
 $color__dark-grey: #757575;
-$mdl-color-text--grey-700: #616161;
+$mdl-color-text--grey-700: $color__text-main;
+
+$card-supporting-text-text-color: $mdl-color-text--grey-700;
+$card-subtitle-color: $mdl-color-text--grey-700;
+$list-supporting-text-text-color: $mdl-color-text--grey-700;
+$tab-text-color: $mdl-color-text--grey-700;
+$data-table-header-color: $mdl-color-text--grey-700;
+
+$layout-text-color: #000;
+
 $mdl-color-body: #f5f5f5;

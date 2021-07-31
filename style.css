@@ -51,7 +51,7 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
+  color: #303030;
   font-family: "Roboto", "Helvetica", sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -392,7 +392,7 @@ ol.comment-list {
   padding-top: 0;
 }
 .page-template-page-ribbon .site-main header h3 {
-  color: #616161;
+  color: #303030;
   margin-bottom: 15px;
 }
 .page-template-page-ribbon .mdlwp-page-ribbon {
@@ -5481,12 +5481,12 @@ input.mdl-button[type=submit] {
 
 .mdl-card__subtitle-text {
   font-size: 14px;
-  color: rgba(0,0,0, 0.54);
+  color: #303030;
   margin: 0;
 }
 
 .mdl-card__supporting-text {
-  color: rgba(0,0,0, 0.54);
+  color: #303030;
   font-size: 1rem;
   line-height: 18px;
   overflow: hidden;
@@ -6334,7 +6334,7 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple, .m
   letter-spacing: 0;
   height: 48px;
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.54);
+  color: #303030;
   padding-bottom: 8px;
   box-sizing: border-box;
 }
@@ -6600,7 +6600,7 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple, .m
 }
 .mdl-dialog__content {
   padding: 20px 24px 24px 24px;
-  color: rgba(0,0,0, 0.54);
+  color: #303030;
 }
 
 /**
@@ -7780,7 +7780,7 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple, .m
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0;
-  color: rgba(0,0,0, 0.54);
+  color: #303030;
 }
 .mdl-list__item .mdl-list__item-secondary-content .mdl-list__item-sub-header {
   padding: 0 0 0 16px;
@@ -7830,7 +7830,7 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple, .m
   line-height: 24px;
   letter-spacing: 0;
   line-height: 18px;
-  color: rgba(0,0,0, 0.54);
+  color: #303030;
   display: block;
   padding: 0;
 }
@@ -7856,7 +7856,7 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple, .m
   letter-spacing: 0;
   line-height: 18px;
   height: 52px;
-  color: rgba(0,0,0, 0.54);
+  color: #303030;
   display: block;
   padding: 0;
 }
@@ -8669,7 +8669,7 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple, .m
 }
 
 .mdl-navigation__link {
-  color: rgb(66,66,66);
+  color: #000;
   text-decoration: none;
   margin: 0;
   font-size: 14px;
@@ -8744,7 +8744,7 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple, .m
   transition-duration: 0.2s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: transform;
-  color: rgb(66,66,66);
+  color: #000;
   overflow: visible;
   overflow-y: auto;
   z-index: 5;
@@ -11186,7 +11186,7 @@ fieldset[disabled] .mdl-switch .mdl-switch__ripple-container .mdl-ripple, .mdl-s
   font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
-  color: rgba(0,0,0, 0.54);
+  color: #303030;
   overflow: hidden;
 }
 .mdl-tabs.is-upgraded .mdl-tabs__tab.is-active {
